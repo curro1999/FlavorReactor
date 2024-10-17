@@ -111,11 +111,17 @@
         }
         footer {
             text-align: center;
-            margin-top: 10px; /* Reduces the space above the logos */
+            margin-top: 100px; /* Reduces the space above the logos */
         }
         footer img {
             height: 40px;
-            margin: 0 20px;
+            margin: 0 10px; /* Adjusts space between the logos */
+            vertical-align: middle; /* Alinea todos los logos verticalmente al centro */
+        }
+        
+        footer img[alt="FlavorReactor Logo"] {
+            height: 80px; 
+            vertical-align: middle; 
         }
         .credit {
             margin-top: 40px;
@@ -170,6 +176,7 @@
 
         <footer>
             <img src="Home/HV.png" alt="HV Logo">
+            <img src="FlavorReactorLogo.png" alt="FlavorReactor Logo">
             <img src="Home/SC.png" alt="SC Logo">
         </footer>
 
