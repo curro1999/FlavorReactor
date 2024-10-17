@@ -34,17 +34,14 @@
             max-width: 900px;
             margin: 0 auto;
         }
-        ul {
+        p {
             font-size: 1.2em;
             line-height: 1.6;
-            list-style-type: disc;
-            margin-left: 20px;
         }
         a {
             text-decoration: none;
-            color: #b2252d;
+            color: #28a745; /* Link color in green */
         }
-
         nav {
             text-align: center;
             margin-top: 20px;
@@ -72,7 +69,7 @@
             filter: brightness(0.8);
         }
         .credit {
-            margin-top: 100px;
+            margin-top: 40px;
             padding-top: 10px;
             border-top: 1px solid #ccc;
             max-width: 600px;
@@ -90,28 +87,65 @@
         .credit a:hover {
             text-decoration: underline;
         }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 70%; 
+            border: 2px solid black; 
+            border-radius: 15px; 
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.0); 
+        }
+        footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+        footer img {
+            height: 40px;
+            margin: 0 20px;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Development (Under construction)</h1>
+        <h1>Development</h1>
     </header>
 
     <main>
-        <h2>Phases of Development</h2>
-        <ul>
-            <li><strong>From Idea to Paper</strong></li>
-            <li><strong>From Paper to Fusion</strong></li>
-            <li><strong>From Fusion to Plastic</strong></li>
-            <li><strong>From Plastic to Software</strong></li>
-            <li><strong>From Software to Fermenting</strong></li>
-        </ul>
+        <h2>From Idea To Paper</h2>
+        <p>
+            First of all, I had to consider which data seemed pertinent to collect for my studies. The primary goal of the project was, and still is, to increase the diameter of the vial cap to allow for the introduction of more sensors. After many Google searches, I came across the company <a href="https://atlas-scientific.com/" target="_blank">AtlasScientific®</a>. They offer a very interesting catalog of products for collecting data online, but the most intriguing aspect was that they also provide a HAT for the Raspberry Pi. Why is this relevant? Because PioReactor’s user interface (UI) also operates through a HAT, and HATs are stackable... could I combine the best of both worlds?
+        </p>
+        <p>
+            The answer was yes. After talking with the Pio team, they confirmed that they had experimented a bit with Atlas’ HAT and that if I put in the effort, after several hours (which will likely turn into days), I could configure the AtlasScientific sensors in such a way that I could visualize the collected data on the PioReactor platform. Eureka! Now it was time to put everything on paper.
+        </p>
+        <div class="image-container">
+            <img src="Development/d1.JPG" alt="Image 1">
+        </div>
+        <p>
+            Several weeks passed, and I learned my first important lesson from the PS70 class: <strong>When it comes to design, less is always more.</strong> I then asked myself which elements I could eliminate from what I had in mind. The AtlasScientific HAT allows for temperature data collection, so I decided to remove the PioReactor Temperature HAT and later correlate it with the PioReactor UI.
+        </p>
+        <div class="image-container">
+            <img src="Development/d2.JPG" alt="Image 2" style="margin-bottom: 30px;">
+        </div>
+        <h2>From Paper To Fusion</h2>
+
+        <p>lorem ipsum dolor sit amet...</p>
+        <p>lorem ipsum dolor sit amet...</p>
+        <p>lorem ipsum dolor sit amet...</p>
 
         <nav>
             <a href="index.html">Home Page</a>
         </nav>
     </main>
+
+    <footer>
+        <img src="Home/HV.png" alt="HV Logo">
+        <img src="Home/SC.png" alt="SC Logo">
+    </footer>
 
     <div class="credit">
         Curro Polo holds the authorship of this project. This project was carried out with the help of PS70 staff and the PioReactor company. This project would not have been possible without all the work done by PioReactor. Test experiments were conducted at Science&Cooking. The project budget is funded by a grant awarded by Food4Thought (F4T). ChatGPT was used to develop the code for this page. Unless otherwise cited, images are the work of <a href="https://www.instagram.com/magdasbar/?hl=es" target="_blank">@magdasbar</a>.
