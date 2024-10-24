@@ -120,6 +120,39 @@
             height: 80px; 
             vertical-align: middle; 
         }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .image-container img {
+                width: 85%;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .image-container img {
+                width: 100%;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+                padding: 8px 15px;
+            }
+        }
     </style>
 </head>
 <body>

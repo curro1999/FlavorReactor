@@ -95,12 +95,11 @@
         footer img {
             height: 40px;
             margin: 0 20px;
-            vertical-align: middle; /* Alinea los logos verticalmente al centro */
+            vertical-align: middle;
         }
-        /* Cambiar el tamaño del logo de FlavorReactor */
         footer img[alt="FlavorReactor Logo"] {
-            height: 80px; /* Cambia este valor al tamaño deseado */
-            vertical-align: middle; /* Alinea verticalmente al centro */
+            height: 80px;
+            vertical-align: middle;
         }
         .credit {
             margin-top: 40px;
@@ -121,6 +120,42 @@
         .credit a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p, ul {
+                font-size: 1.1em;
+            }
+            nav a {
+                padding: 8px 15px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p, ul {
+                font-size: 1em;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+                padding: 8px 12px;
+            }
+            footer img[alt="FlavorReactor Logo"] {
+                height: 60px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -139,7 +174,7 @@
             <li><strong>Projecting on a Curve in Fusion</strong>: lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum.</li>
             <li><strong>Magnetic Stirrer</strong>: lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum.</li>
             <li><strong>OD System</strong>: lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum.</li>
-            <li><strong>Heating Pad</strong>: lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum lorempipsum lorempipsum..</li>
+            <li><strong>Heating Pad</strong>: lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum..</li>
             <li><strong>Power</strong>: lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum lorempipsum loremipsum.</li>
         </ul>
 

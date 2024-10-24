@@ -120,6 +120,36 @@
         .credit a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .download-item img {
+                width: 150px;
+            }
+            .download-item a {
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .download-item img {
+                width: 120px;
+            }
+            .download-item a {
+                font-size: 14px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+                padding: 8px 15px;
+            }
+        }
     </style>
 </head>
 <body>
