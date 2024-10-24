@@ -142,6 +142,55 @@
         .credit a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2.subtitle {
+                font-size: 1em;
+            }
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+            img.large {
+                max-width: 100%;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            .microbial-flavor {
+                font-size: 4em;
+                text-align: center;
+            }
+            .microbial-flavor .flavor {
+                font-size: 1.2em;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            nav a {
+                margin: 5px 0;
+                padding: 8px 15px;
+                display: block;
+            }
+            img.large {
+                max-width: 100%;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            .microbial-flavor {
+                font-size: 3em;
+            }
+            .microbial-flavor .flavor {
+                font-size: 1em;
+            }
+        }
+
     </style>
 </head>
 <body>
