@@ -106,19 +106,38 @@
             height: 40px;
             margin: 0 20px;
         }
-        footer {
-            text-align: center;
-            margin-top: 10px; /* Reduces the space above the logos */
-        }
-        footer img {
-            height: 40px;
-            margin: 0 10px; /* Adjusts space between the logos */
-            vertical-align: middle; /* Alinea todos los logos verticalmente al centro */
-        }
-        
         footer img[alt="FlavorReactor Logo"] {
             height: 80px; 
             vertical-align: middle; 
+        }
+
+        /* Video Effects */
+        .vintage-video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .vintage-video-container video {
+            width: 70%;
+            filter: grayscale(100%) contrast(1.2) brightness(0.9) sepia(0.3); /* Simulates an old film look */
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .vintage-video-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+            opacity: 0.2; /* Adds subtle grain */
+            pointer-events: none;
+            border-radius: 10px;
         }
 
         /* Responsive Design */
@@ -130,6 +149,9 @@
                 font-size: 1.3em;
             }
             .image-container img {
+                width: 85%;
+            }
+            .vintage-video-container video {
                 width: 85%;
             }
         }
@@ -145,6 +167,9 @@
                 font-size: 1em;
             }
             .image-container img {
+                width: 100%;
+            }
+            .vintage-video-container video {
                 width: 100%;
             }
             nav a {
@@ -185,10 +210,30 @@
         
         <h2>From Paper To Fusion</h2>
 
-        <p>lorem ipsum dolor sit amet...</p>
+        <p>
+            Fusion is a CAD program (Computer-Aided Design) that enables ideas from your mind, initially sketched on paper, to be transformed into 3D designs. Personally, I had never used this platform before, so after many YouTube tutorials, countless hours in the Fabrication Lab, and plenty of coffee, I gradually learned to handle it.
+        </p>
 
         <div class="image-container">
             <img src="Development/d3.JPG" alt="Image D3">
+        </div>
+
+        <p>
+            I divided the 3D design into three parts:
+        </p>
+
+        <p><strong>Base:</strong> I wanted the base to serve both an aesthetic function, complementing the curvature of the body, and a structural one, to support the weight of the vial. Scaling up from 15 ml to 500 ml required rethinking the entire reinforcement structure.</p>
+
+        <p><strong>Body:</strong> The body was undoubtedly the most complex and time-consuming part to design. Not only did it need to replicate the same angles as the Pioreactor to operate the optical density system, but the Pioreactor design itself featured highly specific details that I had to analyze with patience—and more coffee. With a larger diameter, I was able to add additional LED openings to work with both back and side scattering.</p>
+
+        <p><strong>Magnetic Stirrer:</strong> The structure here was straightforward; knowing I would use 5V fans, I conducted several power tests and then designed a circle of the appropriate diameter to fit two magnets, replicating the setup used by the Pioreactor.</p>
+
+        <!-- Vintage Video -->
+        <div class="vintage-video-container">
+            <video autoplay loop muted controls>
+                <source src="Development/d4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
         <nav>
